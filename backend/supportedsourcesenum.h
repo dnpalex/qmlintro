@@ -1,0 +1,6 @@
+#ifndef SUPPORTEDSOURCES_H
+#define SUPPORTEDSOURCES_H
+
+enum SupportedSources {LOCAL, GOOGLE_DISK};
+
+#endif // SUPPORTEDSOURCES_H

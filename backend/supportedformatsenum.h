@@ -1,0 +1,6 @@
+#ifndef SUPPORTEDFORMATSENUM_H
+#define SUPPORTEDFORMATSENUM_H
+
+enum SupportedFormats { PDF, EBOOK};
+
+#endif // SUPPORTEDFORMATSENUM_H
