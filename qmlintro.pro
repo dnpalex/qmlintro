@@ -1,7 +1,7 @@
 TEMPLATE = app
 
-QT += qml quick
-CONFIG += c++11
+QT += qml quick #pdf
+CONFIG += c++17
 
 SOURCES += main.cpp \
     backend/modelfactory.cpp \
@@ -39,3 +39,9 @@ HEADERS += \
     backend/supportedsourcesenum.h \
     backend/abstractsourcereader.h \
     backend/bookitem.h
+
+INCLUDEPATH += E:/documents/GitHub/qtpdf/include/QtPdf
+
+LIBS += -LE:/documents/GitHub/qtpdf/lib/
+LIBS += -lQt5Pdf
+

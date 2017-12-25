@@ -14,4 +14,5 @@ BookListModel *ModelFactory::createBookListModel(const QPair<SupportedSources, A
         //auto val = va_arg(args, );
     }
     va_end(args);
+    return nullptr;
 }

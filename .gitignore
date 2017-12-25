@@ -88,3 +88,5 @@ release
 
 #Log files
 Log
+*.stash
+Makefile
