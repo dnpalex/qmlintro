@@ -4,17 +4,43 @@ import QtQuick.Controls 2.2
 
 ApplicationWindow {
     visible: true
-    width: 640
-    height: 480
+    width: 480
+    height: 640
     title: "SimplestReader"
+
+    header: Rectangle {
+        id: header
+        //anchors { margins: 2}
+        height: 40
+        color: "lightgray"
+        radius: 2
+
+        Rectangle{
+            id: optionButton
+            color: "black"
+            anchors {right: parent.right; bottom: parent.bottom; top: parent.top; margins: 2}
+            width: 30
+
+            radius: 3
+        }
+
+        Rectangle {
+            id: returnButton
+            color: "black"
+            anchors {left: parent.left; bottom: parent.bottom; top: parent.top; margins: 2}
+            width: 30
+            radius: 3
+        }
+    }
 
     StackView {
         id: stackView
-        initialItem: titlePage
+        anchors { margins: 3}
+        initialItem: fileGridView
         anchors.fill: parent
     }
 
-    TitlePage{
-        id: titlePage
+    FileGridView{
+        id: fileGridView
     }
 }

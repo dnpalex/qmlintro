@@ -40,8 +40,10 @@ HEADERS += \
     backend/abstractsourcereader.h \
     backend/bookitem.h
 
-INCLUDEPATH += E:/documents/GitHub/qtpdf/include/QtPdf
+#INCLUDEPATH += E:/documents/GitHub/qtpdf/include/QtPdf
 
-LIBS += -LE:/documents/GitHub/qtpdf/lib/
-LIBS += -lQt5Pdf
+#LIBS += -LE:/documents/GitHub/qtpdf/lib/
+#LIBS += -lQt5Pdf
+
+DISTFILES +=
 

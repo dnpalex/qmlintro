@@ -11,8 +11,6 @@ class BookListModel : public QAbstractListModel
     QList<BookItem> itemList;
 public:
 
-    enum DataRole{ FORMAT, URL, SOURCE, PREVIEW};
-
     BookListModel();
     BookListModel(QList<BookItem>&& inputList);
 

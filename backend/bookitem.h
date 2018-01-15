@@ -9,13 +9,20 @@
 
 struct BookItem
 {
+    enum DataRole{ FORMAT, URL, SOURCE, PREVIEW, FILENAME};
+
     SupportedFormats format;
-    QString url;
+    QString fileName;
+    QString folderPath;
     SupportedSources source;
     QIcon preview;
 
+    QString url() const noexcept {
+        return folderPath + fileName;
+    }
+
     bool operator == (const BookItem& other) { return other.format == this->format &&
-                other.url == this->url &&
+                other.url() == this->url() &&
                 other.source == this->source; }
 };
 
